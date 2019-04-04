@@ -1,0 +1,77 @@
+av-filtro {
+	color:white;
+    width: 500px;
+    height: 85px;
+    margin: 20px;
+    float: left;
+}
+fieldset {
+    padding: 20px;
+    color: white;
+}
+fieldset {
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+}
+label {
+	color: white;
+}
+title {
+	color: white;
+}
+body {
+    color: #333333;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+element.style {
+}
+input[type="text"], input[type="date"]{
+    font-family: Verdana, Arial, sans-serif;
+    height: 28px;
+    text-indent: 5px;
+}
+input, textarea {
+    border: 1px solid #CDCDCD;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    /* outline: none; */
+}
+input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+    padding: 1px 0px;
+}
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
