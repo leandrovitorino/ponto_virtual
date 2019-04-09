@@ -3,7 +3,7 @@
 	include_once "conexao.php";	
 	include_once "funcoes/funcao.php";
 ?>
-<?
+<?php
 	$sql = "SELECT * FROM usuarios WHERE id = '$_SESSION[usuarioId]' ";
 	$query = mysqli_query($conn, $sql);
 	$linha = mysqli_fetch_assoc($query);
