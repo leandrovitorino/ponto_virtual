@@ -33,23 +33,23 @@
 			alert('A entrada já foi computada!');
 			location.href='administrativo.php';
 			</SCRIPT>
-<?
+<?php
 		}else{
 
 			$sql="INSERT INTO relatorio (`data`, `nome`, `ent1`, `id`) VALUES ('$dia', '$_SESSION[usuarioNome]', '$hora', '$_SESSION[usuarioId]')";
 			$query=mysqli_query($conn, $sql);
 ?>		
-			<? if ($_SESSION['usuarioNiveisAcessoId'] != 1){ ?>
+			<?php if ($_SESSION['usuarioNiveisAcessoId'] != 1){ ?>
 			<SCRIPT Language="javascript">
 			alert('Entrada cadastrada com sucesso!');
 			location.href='colaborador.php';
 			</SCRIPT>
-			<? }else{ ?>
+			<?php }else{ ?>
 			<SCRIPT Language="javascript">
 			alert('Entrada cadastrada com sucesso!');
 			location.href='administrativo.php';
 			</SCRIPT>
-<?
+<?php
 			}
 		}
 	}else if (! empty($_POST['intervalo'])){
@@ -60,17 +60,17 @@
 		
 		if (empty($linha['ent1'])){
 ?>
-			<? if ($_SESSION['usuarioNiveisAcessoId'] != 1){ ?>
+			<?php if ($_SESSION['usuarioNiveisAcessoId'] != 1){ ?>
 			<SCRIPT Language="javascript">
 			alert('O ponto anterior não foi computado!');
 			location.href='colaborador.php';
 			</SCRIPT>
-			<? }else{ ?> 
+			<?php }else{ ?> 
 			<SCRIPT Language="javascript">
 			alert('O ponto anterior não foi computado!');
 			location.href='administrativo.php';
 			</SCRIPT>
-<?
+<?php
 			}
 		}else if(!empty($linha['sai1']) && isset($linha['sai1'])){
 ?>
